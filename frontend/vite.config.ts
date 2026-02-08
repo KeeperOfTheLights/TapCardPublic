@@ -10,7 +10,7 @@ export default defineConfig({
       '/api': {
         // In Docker dev mode, use 'api' as hostname
         // Locally, use 'localhost'
-        target: process.env.DOCKER ? 'http://api:8000' : 'http://localhost:8000',
+        target: 'https://taply.kz',
         changeOrigin: true,
       }
     }
